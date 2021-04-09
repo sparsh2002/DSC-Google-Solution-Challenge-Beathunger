@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+    $(".toggle").on("click", function() {
+        if ($(".item").hasClass("active")) {
+            $(".item").removeClass("active");
+        } else {
+            $(".item").addClass("active");
+        }
+    });
+});
+    </script>
+</head>
+<body>
+    <header>
+        <!--Navigation Bar-->
+        <nav>
+            <ul class="nav_links">
+                <li class="logo"><a href="/"><img class="logo" src="static/logo.png" alt="logo" width="70" height="70" ></a></li>
+                <li class="item"><a href="/">Home</a></li>
+                <li class="item"><a href="/blog">Blog</a></li>
+                <li class="item"><a href="/volunteer">Volunteer</a></li>
+                <li class="item"><a href="/aboutus">About</a></li>
+                <li class="item"><a href="/contactus">Contact</a></li>
+                <li class="item button"><a href="/login">Login</a></li>
+                <li class="item button secondary"><a href="/signup">SignUp</a></li>
+                <li class="toggle"><span class="bars"></span></li>
+
+            </ul>
+        </nav>
+        
+    </header>
+     <!--Image sliders-->
+    
+     <div class="slider">
+       <figure>
+        <div class="slide">
+          <img src="static/bg5.png" alt="" width="600px" height="600px">
+         </div>
+         <div class="slide">
+           <img src="static/1.jpeg" alt="" width="600px" height="600px">
+          </div>
+          <div class="slide">
+            <img src="static/3.jpeg" alt="" width="600px" height="600px">
+           </div>
+           <div class="slide">
+            <img src="static/2.jpeg" alt="" width="600px" height="600px">
+           </div>
+           <div class="slide">
+            <img src="static/1.jpeg" alt="" width="600px" height="600px">
+           </div>
+       </figure>
+     </div>
+
+    
+   
+    <!--Stats Section-->
+    <!--Stats Section-->
+    <div class="container">
+    <div class="half1">
+        <h1>Dare to take the challenge to Beat Hunger.</h1>
+    </div>
+    
+    <div class="part">
+    <p class="stat" >One in every nine people goes to bed hungry each night. </p>
+    <p class="stat special" >2 billion people suffer from malnutrition around the globe</p>
+    </div>
+    <div class="part">
+    <p class="stat">  Around the world, 821 million people do not have enough of the food they need to live an active, 
+healthy life</p>   
+    <p class="stat special" >world hunger is on the rise, affecting 8.9 percent of people globally</p>
+    </div>
+    
+    </div>
+    
+
+    <!--Section 2-->
+    <div class="container2">
+        
+             <div class="desc">
+                 <h2 class="head">Volunteers</h2>
+                 <p class="paragraph">It  is said "giving is the greatest act of grace"; 
+                    so now, with just few clicks you can help the underprivileged fill their stomachs. 
+                    You just have to sign up and donate extra leftover food from your houses and hotels. 
+                    Your one contribution can help several people beat hunger.
+
+                </p>
+                <a href="/volunteerl"><input type="submit" value="Register" id="registerbtn"></a>
+             </div>
+             <div class="desc">
+                <h2 class="head">NGOs</h2>
+                <p class="paragraph">By signing up you will be connected to several possible volunteers who are willing to help you help the underprivileged people. This way you will get a helping hand managing your hectic work.</p>
+                <a href="/ngo"><input type="submit" value="Register" id="registerbtn"></a>
+              </div>
+        
+        <div class="sec2half2">
+            <h1>We connect Non-Profit Organisations and volunteers, donors.</h1>
+        </div>
+    </div> 
+    
+    <div class="container3">
+        <div class="sec3half1">
+            <h1>Partners</h1>
+        </div>
+        <div class="logos">
+            <img class="logo2" src="static/logo.png" alt="logo" width="90" height="90">
+            <img class="logo2" src="static/logo.png" alt="logo" width="90" height="90">
+            <img class="logo2" src="static/logo.png" alt="logo" width="90" height="90">
+            <img class="logo2" src="static/logo.png" alt="logo" width="90" height="90">
+            <img class="logo2" src="static/logo.png" alt="logo" width="90" height="90">
+        </div>
+    </div>
+
+
+    <!--section 4 testimonials-->
+    <div class="container4">
+        <div class="sec4half1">
+            <h1>Testimonials</h1>
+            <p>What People say about us ?</p>
+        </div>
+        
+             <div class="desc4">
+                 <p class="paragraph4">a morw use Loremtext, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by acclike).</p>
+             </div>
+             <div class="desc4">
+                <p class="paragraph4">remtext, and a search for 'lorems to injected humour, or non-characteristic words etc.</p>
+             </div>
+        
+    </div>
+    
+    <!--section 5 news-->
+ <!--   <h2 class="newshead">
+      News and Updates
+  </h2>
+    <div class="news">
+       <div class="box">
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi consequuntur nobis, quo id laborum error nulla tenetur esse itaque ad saepe illum, aliquid est, pariatur optio sunt! Nostrum, ipsa rerum!</p>
+       </div>
+       <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi consequuntur nobis, quo id laborum error nulla tenetur esse itaque ad saepe illum, aliquid est, pariatur optio sunt! Nostrum, ipsa rerum!</p>
+       </div>
+    </div>
+-->
+
+   <!-- Footer -->
+    
+   <div class="footer">
+     <div class="fimg">
+        <img src="static/Untitled-1.png" width="100" height="25">
+     </div>
+       <div class="social">
+
+       <h3 class="head1f">Social Handles</h3>
+
+       <ul class="sociall">
+        <li><a href="#facebook">facebook</a></li>
+       <li><a href="https://instagram.com/beathungger?igshid=1bo0n761863de">instagram</a></li>
+       <li><a href="#twitter">twitter</a></li>
+       <li><a href="https://www.youtube.com/channel/UCWc_aaBPPz1xboP3X73k8pQ/featured">youtube</a></li>
+       <li><a href="beathungger@gmail.com">gmail</a></li>
+       </ul>
+
+       </div>
+       <div class="support">
+        <h3 class="head1f">Support</h3>
+
+            <ul class="sociall">
+             <li><a href="/contactus">contact us</a></li>
+             <li><a href="https://instagram.com/beathungger?igshid=1bo0n761863de">faq</a></li>
+             <li><a href="#twitter">feedback</a></li>
+            </ul>
+       </div>
+    <div class="email">
+        <h3 class="headsf">Subscribe to aur newsletter</h3>
+        
+        <input type="email" placeholder="Enter your email address" id="femail" >
+        <a href="#"><input type="submit" value="Sign up" id="femailbtn"></a>
+        
+    </div>
+   </div>
+    
+</body>
+</html>

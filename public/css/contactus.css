@@ -1,0 +1,360 @@
+/* Navigation Bar*/
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homenaje&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Martel Sans', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+nav  {
+
+    padding: 10px 5%;
+    background-color: bisque;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+    font-weight: 300;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    padding: 5px 20px;
+    text-decoration: none; 
+    display: block;
+}
+
+.nav_links li a:hover {
+    color: #006E45;
+}
+
+.nav_links li {
+
+    white-space: nowrap;  
+}
+
+.toggle a {
+    font-size: 20px;
+  }
+
+
+
+  /* Mobile screen*/
+.nav_links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle {
+    order: 1;
+}
+
+.item.button {
+    order: 2;
+  }
+.item {
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+}
+.item.active {
+    display: block;
+}
+
+.item.active {
+    display: block;
+}
+  
+
+
+  /* Navbar Toggle */
+  .toggle {
+    cursor:pointer;
+    margin-left: 12px;
+  }
+  .bars {
+    background: #006E45;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  .bars:before,
+  .bars:after {
+    background: #006E45;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  .bars:before {
+    top: 5px;
+  }
+  .bars:after {
+    top: -5px;
+  }
+
+  /* Tablet menu */
+  @media all and (min-width: 468px) {
+    .nav_links {
+        justify-content: center;
+    }
+  
+    .logo {
+        flex: 1;
+    }
+  
+    .button {
+        width: 100px;
+        height: 40px;
+        order: 1;
+        display: block;
+        margin: 0px 20px;
+    }
+    .toggle {
+        order: 2;
+    }
+    .button.secondary {
+        border: 0;
+    }
+    .button a {
+        padding: 7.5px 15px;
+        
+    background-color: #90B659;
+    
+    font-size: 1rem; 
+        
+        border: 1px #006d6d solid;
+        border-radius:50em;
+    }
+    .button.secondary a {
+        background: transparent;    
+    }
+    .button a:hover {
+        text-decoration: none;
+        transition:all .25s;
+    }
+    .button:not(.secondary) a:hover {
+        cursor: pointer;
+        background-color:#006E45 ;
+        
+        color: whitesmoke;
+    }
+    .button.secondary a:hover {
+        color: #006E45 ;
+    } 
+  }
+
+    /* Desktop menu */
+    @media all and (min-width: 1250px) {
+        .item {
+            display: block;
+            width: auto;
+        }
+        .toggle {
+            display: none;
+        }
+        .logo {
+            
+            order: 0;
+        }
+        .item {
+            order: 1;
+        }
+        .button {
+            
+            order: 2;
+        }
+        
+        .nav_links li {
+            padding: 10px 10px;
+        }
+        .nav_links li.button {
+            padding-top: 0%;
+            padding-right: 0;
+        }
+    }
+/*Navigation Bar ends*/
+
+
+body{
+    background-color:rgb(247, 235, 222);
+}
+
+
+.contactsection{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.contactinfo{
+     color: black;
+     background-color: rgb(247, 235, 222);
+     margin-top: 100px;
+     margin-left: 150px;
+}
+
+.sec{
+    margin: 20px;
+}
+
+.contactform{
+    width: 600px;
+    margin-right: 100px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    background-color: rgb(247, 235, 222);
+    align-items: center;
+    text-align: center;
+    
+}
+
+.horizontal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contactform h2{
+    padding: 20px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-box{
+    background: rgb(25, 27, 26);
+    color: #fff;
+    border: none;
+    width: calc(50% - 10px);
+    height: 50px;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.send-btn{
+    
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #90B659;
+    outline: none;
+    border: none;
+    
+    font-size: 1rem;  
+}
+
+.send-btn:hover{
+    cursor: pointer;
+    background-color:#006E45 ;
+    transition: all 0.3s ease 0s;
+    color: whitesmoke;
+}
+
+.contactform textarea{
+    background: rgb(25, 27, 26);
+    color: #fff;
+    border: none;
+    width: 75%;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    min-height: 200px;
+    max-height: 400px;
+    resize: vertical;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+/*Foooter*/
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(31, 31, 31) ;
+}
+
+.fimg{
+    padding-top: 145px;
+    padding-left: 100px
+}
+
+.head1f{
+    padding-top: 99px;
+    padding-left: 10px;
+    color: rgb(129, 128, 128);
+}
+.sociall{
+    padding-left: 10px;
+}
+
+a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.headsf{
+    padding-top: 99px;
+    
+    color: rgb(129, 128, 128);
+}
+
+#femail{
+    background-color: bisque;
+    width: 250px;
+    height: 40px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#femailbtn{
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #90B659;
+    outline: none;
+    border: none;
+    
+    font-size: 1rem;    
+}
+
+#femailbtn:hover{
+    cursor: pointer;
+    background-color:#006E45 ;
+    transition: all 0.3s ease 0s;
+    color: whitesmoke;
+}
+/*footer end*/

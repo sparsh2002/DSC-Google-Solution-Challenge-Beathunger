@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <link rel="stylesheet" href="css/volunteer.css">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+    $(".toggle").on("click", function() {
+        if ($(".item").hasClass("active")) {
+            $(".item").removeClass("active");
+        } else {
+            $(".item").addClass("active");
+        }
+    });
+});
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase-auth.js"></script>
+</head>
+<body>
+    <header>
+        <!--Navigation Bar-->
+        
+        <nav>
+            <ul class="nav_links">
+                <li class="logo"><a href="/"><img class="logo" src="static/logo.png" alt="logo" width="70" height="70" ></a></li>
+                <li class="item"><a href="/">Home</a></li>
+                <li class="item"><a href="/blog">Blog</a></li>
+                <li class="item"><a href="/volunteer">Volunteer</a></li>
+                <li class="item"><a href="/aboutus">About</a></li>
+                <li class="item"><a href="/contactus">Contact</a></li>
+                <li class="item button"><a href="/login">Login</a></li>
+                <li class="item button secondary"><a href="/signup">SignUp</a></li>
+                <li class="toggle"><span class="bars"></span></li>
+
+            </ul>
+        </nav>
+    </header>
+    
+    <!--Image-->
+    <div class="img">
+        <img src="static/jh.jpg" class="bg5" width="100%" height="400px" >
+    </div>
+    
+    <!--sec 1-->
+    <div class="head">
+        <h3 class="h3">Choose the one most convenient to you</h3>
+        <h1 class="h1">Introducing our partner NGOs</h1>
+    </div>
+<div id="main_container" style="display:none;" class="logout">
+            
+            <button id="femailbtn" onclick="mainApp.logout();">logout</button>
+        
+
+    </div>
+
+
+    <div class="cards">
+
+      <div class="card">
+        <img class="card__image" src="static/v1.jpg" alt="">
+        <div class="card__content">
+          <h3>NGO - 1</h3>
+          <div class="s"><h3>Area of Operation: </h3><p>PAN</p></div>
+          <p>
+            Alias itaque praesentium eum, pariatur consequatur ducimus asperiores accusantium velit minima?
+          </p>
+        </div>
+        <div class="card__info">
+            <a href="/donate"><input type="button" value="Donate" id="btn" href="#"></a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card__image" src="static/v2.jpg" alt="">
+        <div class="card__content">
+            <h3>NGO - 1</h3>
+            <div class="s"><h3>Area of Operation: </h3><p>PAN</p></div>
+          <p>
+            Alias itaque praesentium eum, pariatur consequatur ducimus asperiores accusantium velit minima?
+          </p>
+        </div>
+        <div class="card__info">
+            <input type="button" value="Donate" id="btn" href="#">
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card__image" src="static/v3.jpg" alt="">
+        <div class="card__content">
+            <h3>NGO - 1</h3>
+            <div class="s"><h3>Area of Operation: </h3><p>PAN</p></div>
+          <p>
+            Alias itaque praesentium eum, pariatur consequatur ducimus asperiores accusantium velit minima?
+          </p>
+        </div>
+        <div class="card__info">
+            <input type="button" value="Donate" id="btn" href="#">
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card__image" src="static/v4.png" alt="">
+        <div class="card__content">
+            <h3>NGO - 1</h3>
+            <div class="s"><h3>Area of Operation: </h3><p>PAN</p></div>
+          <p>
+            Alias itaque praesentium eum, pariatur consequatur ducimus asperiores accusantium velit minima?
+          </p>
+        </div>
+        <div class="card__info">
+            <input type="button" value="Donate" id="btn" href="#">
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card__image" src="static/v5.png" alt="">
+        <div class="card__content">
+            <h3>NGO - 1</h3>
+            <div class="s"><h3>Area of Operation: </h3><p>PAN</p></div>
+          <p>
+            Alias itaque praesentium eum, pariatur consequatur ducimus asperiores accusantium velit minima?
+          </p>
+        </div>
+        <div class="card__info">
+            <input type="button" value="Donate" id="btn" href="#">
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card__image" src="static/v6.jpg" alt="">
+        <div class="card__content">
+            <h3>NGO - 1</h3>
+            <div class="s"><h3>Area of Operation: </h3><p>PAN</p></div>
+          <p>
+            Alias itaque praesentium eum, pariatur consequatur ducimus asperiores accusantium velit minima?
+          </p>
+        </div>
+        <div class="card__info">
+            <input type="button" value="Donate" id="btn" href="#">
+        </div>
+      </div>
+    </div>
+    
+    <script src="js/firebase.js"></script>
+    <script src="js/main.js"></script>
+
+<!-- Footer -->
+    
+<div class="footer">
+  <div class="fimg">
+     <img src="static/Untitled-1.png" width="100" height="25">
+  </div>
+    <div class="social">
+
+    <h3 class="head1f">Social Handles</h3>
+
+    <ul class="sociall">
+     <li><a href="#facebook">facebook</a></li>
+       <li><a href="https://instagram.com/beathungger?igshid=1bo0n761863de">instagram</a></li>
+       <li><a href="#twitter">twitter</a></li>
+       <li><a href="https://www.youtube.com/channel/UCWc_aaBPPz1xboP3X73k8pQ/featured">youtube</a></li>
+       <li><a href="beathungger@gmail.com">gmail</a></li>
+    </ul>
+
+    </div>
+    <div class="support">
+     <h3 class="head1f">Support</h3>
+
+         <ul class="sociall">
+          <li><a href="#facebook">contact us</a></li>
+          <li><a href="#instagram">faq</a></li>
+          <li><a href="#twitter">feedback</a></li>
+         </ul>
+    </div>
+ <div class="email">
+     <h3 class="headsf">Subscribe to aur newsletter</h3>
+     
+     <input type="email" placeholder="Enter your email address" id="femail" >
+     <a href="#"><input type="submit" value="Sign up" id="femailbtn"></a>
+     
+ </div>
+</div>
+ 
+</body>
+</html>

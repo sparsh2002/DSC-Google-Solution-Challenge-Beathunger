@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="css/aboutus.css">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+    $(".toggle").on("click", function() {
+        if ($(".item").hasClass("active")) {
+            $(".item").removeClass("active");
+        } else {
+            $(".item").addClass("active");
+        }
+    });
+});
+    </script>
+</head>
+<body>
+    <header>
+        <!--Navigation Bar-->
+        
+        <nav>
+            <ul class="nav_links">
+                <li class="logo"><a href="/"><img class="logo" src="static/logo.png" alt="logo" width="70" height="70" ></a></li>
+                <li class="item"><a href="/">Home</a></li>
+                <li class="item"><a href="/blog">Blog</a></li>
+                <li class="item"><a href="/volunteer">Volunteer</a></li>
+                <li class="item"><a href="/aboutus">About</a></li>
+                <li class="item"><a href="/contactus">Contact</a></li>
+                <li class="item button"><a href="/login">Login</a></li>
+                <li class="item button secondary"><a href="/signup">SignUp</a></li>
+                <li class="toggle"><span class="bars"></span></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    
+    <!--Image-->
+    <div class="img">
+      <img src="static/aboutmain.jpg" class="bg5" width="100%" height="350px" >
+  </div>
+  
+      <!--Section 2-->
+      <div class="container2">
+        
+             <div class="desc1">
+                <img src="static/un.jpg" alt="img" width="450px" height="450px">
+             </div>
+        
+        
+          <div class="desc2">
+            <h2 class="head">See the Network, not Networth</h2>
+            <p class="paragraph">We aim to make this world a hunger-free space. For achieving our ultimate goal, we plan to connect the generous volunteers who can help by donating leftover food and hardworking NGOs which will make that food available to the needful through the means of our web portal, “Beat hunger”</p>
+         </div>
+        
+    </div> 
+
+     <!--Section 3-->
+     <div class="container3">
+      <div class= "sec31" > 
+        
+          <h2 class="head">Mission</h2>
+          <p class="paragraph">Our mission is to make a Hunger-Free World. To nullify the malnutrition. Decrease the rate of death due to hunger. We aim to provide food to the needy by connecting NGOs and volunteers and we look forward to stop the wastage of food and utilize it by giving it to the people in need.
+            </p>
+       
+      </div>
+      <div class="desc1">
+        <img src="static/ky.jpg" alt="img" width="550px" height="450px">
+     </div>
+  </div> 
+
+      <!--Section 4-->
+      <div class="container4">
+        <div class= "sec41" > 
+          
+            <h2 class="head">Our Story</h2>
+            
+         
+        </div>
+        <div class="sec42">
+          
+            
+            <p class="paragraph">We noticed a huge wastage of food at various places in our daily lives and on the other hand there are still lot of people on the streets who don’t even get a single meal in a day. People who can help eradicate this hunger crisis even waste food being ignorant. So we created the webapp “BEAT HUNGER” to make this ‘going to be wasted’ food reach its right place by making the process of connection of various NGOs with volunteers easy. </p>
+         
+        </div>
+    </div>
+
+    <!-- Footer -->
+    
+   <div class="footer">
+    <div class="fimg">
+       <img src="static/Untitled-1.png" width="100" height="25">
+    </div>
+      <div class="social">
+
+      <h3 class="head1f">Social Handles</h3>
+
+      <ul class="sociall">
+       <li><a href="#facebook">facebook</a></li>
+       <li><a href="https://instagram.com/beathungger?igshid=1bo0n761863de">instagram</a></li>
+       <li><a href="#twitter">twitter</a></li>
+       <li><a href="https://www.youtube.com/channel/UCWc_aaBPPz1xboP3X73k8pQ/featured">youtube</a></li>
+       <li><a href="beathungger@gmail.com">gmail</a></li>
+      </ul>
+
+      </div>
+      <div class="support">
+       <h3 class="head1f">Support</h3>
+
+           <ul class="sociall">
+            <li><a href="#facebook">contact us</a></li>
+            <li><a href="#instagram">faq</a></li>
+            <li><a href="#twitter">feedback</a></li>
+           </ul>
+      </div>
+   <div class="email">
+       <h3 class="headsf">Subscribe to aur newsletter</h3>
+       
+       <input type="email" placeholder="Enter your email address" id="femail" >
+       <a href="#"><input type="submit" value="Sign up" id="femailbtn"></a>
+       
+   </div>
+  </div>
+   
+</body>
+</html>
