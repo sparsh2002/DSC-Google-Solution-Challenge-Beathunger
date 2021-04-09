@@ -1,5 +1,14 @@
 # beathhunger-DSC-Google-Solution-Challenge
 
+
+
+
+
+To View The Project Go to the Following Link:https://beathunger.herokuapp.com/
+
+
+
+
 ------ABOUT-----
 
 Hello everyone! Team Emissive has created a platform to solve problems like wastage of food at parties and hotels and it also provides a platform to people and NGOs who are willing to help the underprivileged. The BEAT HUNGER webapp makes it easier for NGOs and volunteer to connect with each other with the motto of helping people and beating hunger and spreading happiness in the world.
